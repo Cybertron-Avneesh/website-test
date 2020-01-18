@@ -12,9 +12,12 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-  </head>
-  <body class="loaded" data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+  
+    </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <div class="se-pre-con"></div>
   <!-- <div class="site-wrap">
 
     <div class="site-mobile-menu site-navbar-target">
@@ -25,11 +28,8 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div> -->
-      <div id="loader-wrapper">
-        <div id="loader">
-          
-        </div>
-      </div>
+  
+
     <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
 
       <div class="container-fluid">
@@ -82,5 +82,11 @@
       </div>
     </div>
   </div>
+  <script>
+  $(window).load(function() {
+      // Animate loader off screen
+      $(".se-pre-con").fadeOut("slow");;
+    });
+    </script>
   </body>
 </html>
